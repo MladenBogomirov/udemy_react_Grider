@@ -14,10 +14,6 @@ class App extends React.Component {
     );
   }
 
-  componentDidUpdate() {
-    console.log('My component was just updated - it rendered!');
-  }
-
   renderContent() {
     if (this.state.lat) {
       return <SeasonDisplay lat={this.state.lat}/>
